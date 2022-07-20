@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.Item label {
+  /* outline: 1px solid red; */
+  margin: 14px;
+  color: rgb(105, 103, 103);
+
+}
+
+.itemIcon {
+  /* outline: 1px solid navy; */
+  color: rgb(105, 103, 103);
+
+}
+
+
+.Item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.Item:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+
+.Item:hover   > .itemIcon{
+    color: whitesmoke;
+}
+
+.Item:hover   > label
+{
+    color: white;
+}
+
+.Item.selected {
+background-color: green;
+color: white;
+}
+
+.Item.selected > label{
+    color: white;
+    font-weight: bold;
+}
+
+.Item.selected > .itemIcon{
+    color: white;
+
+}
+
+
+
