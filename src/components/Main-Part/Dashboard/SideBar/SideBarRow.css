@@ -25,7 +25,7 @@
 }
 
 .Item:hover {
-  background-color: green;
+  background-color: rgb(174, 167, 167);
   color: white;
   cursor: pointer;
 }

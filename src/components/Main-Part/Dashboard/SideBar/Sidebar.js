@@ -11,11 +11,11 @@ const Sidebar = () => {
   return (
 <>
 <div className='Sidebar'>
-  <SideBarRow selected Icon={DetailsIcon} title="Candidate Details" />
-  <SideBarRow Icon={PersonAddIcon} title="Add Candidate" />
-  <SideBarRow Icon={HowToRegIcon} title="Register" />
-  <SideBarRow Icon={PublishedWithChangesIcon} title="Change Status" />
-  <SideBarRow Icon={LogoutIcon} title="Logout" />
+  <SideBarRow  Icon={DetailsIcon}  title="CandidatesDetails" to="/Dashboard/CandidatesDetails"  />
+  <SideBarRow selected Icon={PersonAddIcon} title="Add Candidate"  to="/Dashboard/AddCandidate" />
+  <SideBarRow Icon={HowToRegIcon} title="Register"  to="/Dashboard/Register" />
+  <SideBarRow Icon={PublishedWithChangesIcon} title="ChangeStatus"  to="/Dashboard/ChangeStatus"  />
+  <SideBarRow Icon={LogoutIcon} title="Logout"  to="/Dashboard/Logout" />
 
 
 </div>

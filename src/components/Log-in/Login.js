@@ -52,7 +52,7 @@ const Login = () => {
           alert("invalid details")
         }else{
           console.log("user login successful");
-          history("/Dashboard");
+          history("/Dashboard/AddCandidate");
         }
       }
     }

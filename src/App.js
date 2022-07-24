@@ -15,14 +15,13 @@ const App = () =>{
 <>
 <Router>
 {/* <Firstpage/> */}
-
 <Routes> 
-  <Route path = "/" element={<Firstpage/>}></Route>
+  <Route  path = "/" element={<Firstpage/>}></Route>
   <Route path = "/Adminlogin" element={<Adminlogin/>}></Route>
   <Route path = "/Register" element={<Register/>}></Route>
   <Route path = "/Login" element={<Login/>}></Route>
   <Route path = "/Complete" element={<Complete/>}></Route>
-  <Route path = "/Dashboard" element={<Dashboard/>}></Route>
+  <Route exact path = "/Dashboard/*" element={<Dashboard/>}></Route>
 
 </Routes>
 </Router>
