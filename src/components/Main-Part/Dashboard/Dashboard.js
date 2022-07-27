@@ -5,8 +5,7 @@ import Register from "../../pages/Register";
 import Sidebar from "./SideBar/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import CandidatesDetails from "../../pages/CandidatesDetails";
-import Logout from "@mui/icons-material/Logout";
-
+import Logout from "../../pages/Logout"
 const Dashboard = () => {
   return (
 

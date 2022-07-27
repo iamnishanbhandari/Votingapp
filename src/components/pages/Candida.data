@@ -1,0 +1,79 @@
+// import React, { useState} from 'react';
+// import View from "./View";
+// import "./CandidatesDetails.css";
+// const getDatafromLS=()=>{
+//   const data = localStorage.getItem('userInfo');
+//   if(data){
+//     return JSON.parse(data);
+//   }
+//   else{
+//     return []
+//   }
+// }
+
+// const CandidatesDetails = () => {
+
+
+//   const [books, setbooks]=useState(getDatafromLS());
+
+
+// const getuserInfo = localStorage.getItem("userInfo");
+// const infoPrint = console.log(getuserInfo);
+// console.log(infoPrint);
+
+
+//   return (
+//       <div className="detailsContainer">
+//         <div className="detailsMainBox">
+//           <div className="detailsHeadBox">
+//             <p>CandidatesDetails</p>
+//           </div>
+//           <div className='view-container'>
+//           {books.length>0&&<>
+//             <div className='table-responsive'>
+//               <table className='table'>
+//                 <thead>
+//                   <tr>
+//                   <th>isbn</th>
+//                     <th>Name</th>
+//                     <th>Party</th>
+//                     <th>Age</th>
+//                     <th>qualification</th>
+//                   </tr>
+//                 </thead>
+//                 <tbody>
+//                   <View books={books} /> 
+//                    {/* deleteBook={deleteBook} */}
+//                 </tbody>
+//               </table>
+//             </div>
+//             <button className='btn btn-danger btn-md'
+//             onClick={()=>setbooks([])}>Remove All</button>
+//           </>
+//           }
+//        </div>
+//       </div>
+//     </div>
+
+//   );
+// };
+
+// export default CandidatesDetails;
+
+
+
+// export const View = ({books,deleteBook}) => {
+    
+//     return books.map(book=>(
+        
+//         <tr key={book.isbn}>
+//             <td>{book.isbn}</td>
+//             <td>{book.title}</td>
+//             <td>{book.author}</td>
+//             <td className='delete-btn' onClick={()=>deleteBook(book.isbn)}>
+//                 <Icon icon={trash}/>
+//             </td>           
+//         </tr>            
+    
+// ))
+// }

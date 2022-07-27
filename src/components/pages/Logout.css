@@ -1,0 +1,34 @@
+.logoutBox {
+  outline: 3px solid green;
+  margin: auto;
+  margin-top: -41%;
+  margin-left: 40%;
+  height: 20vh;
+  width: 30%;
+}
+
+.logoutBox p {
+  background-color: green;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.logoutBtn {
+  /* outline: 1px solid green; */
+  margin: 50px 0px 0px 80px;
+}
+
+.logoutBtn button {
+  border: none;
+  background-color: green;
+  color: white;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 70px;
+  font-size: large;
+}

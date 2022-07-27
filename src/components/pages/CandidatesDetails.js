@@ -1,21 +1,29 @@
-import React from "react";
-import "./Logout.css";
+import React, { useEffect, useState } from "react";
+import View from "./View";
+import "./CandidatesDetails.css";
+import useCandidatesData from "./Customhook";
 
 const CandidatesDetails = () => {
+const {candidatesData}=useCandidatesData();
+
   return (
-    <>
-      <div className="container">
-        <div className="mainBox">
-          <div className="headBox">
-            <p>CandidatesDetails</p>
-          </div>
-         
-          <div className="candidateBtn"> 
-          <button> Add </button>
-          </div>
-        </div>
+    
+      <div className="detailsMainBox">
+        <table>
+          <thead>
+            <tr>
+              <th>Name </th>
+              <th>Age </th>
+              <th>Party </th>
+              <th>Qualification </th>
+            </tr>
+          </thead>
+          <tbody>
+            <View info={candidatesData} />
+          </tbody>
+        </table>
       </div>
-    </>
+    
   );
 };
 

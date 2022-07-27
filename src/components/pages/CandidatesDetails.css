@@ -1,4 +1,4 @@
-.mainBox{
+.detailsMainBox{
     outline: 3px solid green;
     margin: auto;
     margin-top: -41%;
@@ -7,8 +7,18 @@
     width: 50%;
 }
 
+table, th, td {
+ border: 1px solid black;
+}
 
-.headBox {
+th {
+    padding: 5px;
+}
+td {
+    padding: 2px 5px
+}
+
+.detailsHeadBox {
     /* outline: 1px solid red; */
     background-color: green;
     color: white;
@@ -20,46 +30,64 @@
 
 }
 
-.inputAddBox{
+.Details .topSpan
+{
+border-top: 1px solid black;
+}
+
+.Details .bottomSpan
+{
+border-top: 1px solid black;
+}
+
+
+.Details{
+    margin: 20px;
+}
+
+
+.detailsName
+{
     /* outline: 1px solid red; */
-    height: 40vh;
-    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper .view-container{
+    width: 600px;    
+    background-color: #e4e4e4;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-btn{
+    color: red;
+    cursor: pointer;
+}
+
+tbody{
+    margin-top: 25px;
+}
+
+/* 
+.table th{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: large;
+    }
+
+
+
+.table tr{
+outline: 1px solid navy;
+display: flex;
+justify-content: space-between;
 }
 
 
-.inputAddBox input{
-    border: none;
-    border-bottom:1px solid grey ;
-    outline: none;
-    font-size: larger;
-    margin-top:10px;    
-}
-
-
-.inputAddBox label{
-    font-size: large;
-    font-weight: bold;
-}
-
-
-.Addbtn{
-    /* outline: 1px solid green; */
- margin: -75px 0px 0px 30px  ;
-}
-
-
-.Addbtn button{
-    border: none;
-    background-color: green;
-    color: white;
-    width: 600px;
-    height: 30px;
-    cursor: pointer;
-    margin-left: 60px;
-    font-size: large;
-}
-
+.table tr td{
+    outline: 1px solid rebeccapurple;
+    margin: 2px;
+    gap: 4px;
+} */

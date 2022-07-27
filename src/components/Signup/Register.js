@@ -74,6 +74,7 @@ const Register = () => {
               <MailIcon color="action" />
             </i>
             <input
+            required
               type={"text"}
               placeholder={"Email"}
               onChange={getData}

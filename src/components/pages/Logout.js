@@ -1,34 +1,25 @@
 import React from "react";
 import "./Logout.css";
+import {useNavigate } from 'react-router-dom';
 
-const CandidatesDetails = () => {
+const Logout = () => {
+
+let user = JSON.parse(localStorage.getItem('useryoutube'))
+const navigate = useNavigate();
+
+
+const clicked = () =>{
+localStorage.clear();
+navigate('/Register');
+}
   return (
     <>
       <div className="container">
-        <div className="mainBox">
-          <div className="headBox">
-            <p>AddCandidateInfo</p>
-          </div>
-          <div className="inputAddBox">
-            <div className="AddlabelInput">
-              <label>Name:</label> <br />
-              <input type="text" placeholder="Name"></input>
-            </div>
-            <div className="AddlabelInput">
-              <label>Party :</label> <br />
-              <input type="text" placeholder="Party"></input>
-            </div>
-            <div className="AddlabelInput">
-              <label>Age :</label> <br />
-              <input type="text" placeholder="Age"></input>
-            </div>
-            <div className="AddlabelInput">
-              <label>Qualification :</label> <br />
-              <input type="text" placeholder="Qualification"></input>
-            </div>
-          </div>
-          <div className="candidateBtn"> 
-          <button> Add </button>
+        <div className="logoutBox">
+            <p>Do you want to logout ?</p>
+          
+          <div className="logoutBtn"> 
+          <button onClick={clicked}> Logout </button>
           </div>
         </div>
       </div>
@@ -36,4 +27,4 @@ const CandidatesDetails = () => {
   );
 };
 
-export default CandidatesDetails;
+export default Logout;
