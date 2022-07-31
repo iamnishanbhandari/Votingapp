@@ -63,6 +63,7 @@ const Register = () => {
               <AccountCircleIcon color="action" />
             </i>
             <input
+              required
               type={"text"}
               placeholder={"Name"}
               onChange={getData}
@@ -74,7 +75,7 @@ const Register = () => {
               <MailIcon color="action" />
             </i>
             <input
-            required
+              required
               type={"text"}
               placeholder={"Email"}
               onChange={getData}
@@ -86,6 +87,7 @@ const Register = () => {
               <LockIcon color="action" />
             </i>
             <input
+              required
               type={"password"}
               placeholder={"Password"}
               onChange={getData}

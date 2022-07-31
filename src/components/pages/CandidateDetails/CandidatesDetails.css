@@ -1,0 +1,101 @@
+.detailsMainBox {
+  margin: auto;
+  margin-top: -41%;
+  margin-left: 45%;
+  height: 50vh;
+  width: 25%;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  min-width: 520px;
+  min-height: 150px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.detailsHeadBox {
+  outline: 1px solid red;
+  background-color: green;
+  color: white;
+  padding-left: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+
+.Details .topSpan {
+  border-top: 1px solid black;
+}
+
+.Details .bottomSpan {
+  border-top: 1px solid black;
+}
+
+.Details {
+  margin: 20px;
+}
+
+.detailsName {
+  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper .view-container {
+  width: 600px;
+  background-color: #e4e4e4;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+tbody {
+  margin-top: 25px;
+}
+
+/* 
+.table th{
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+
+.table tr{
+outline: 1px solid navy;
+display: flex;
+justify-content: space-between;
+}
+
+
+.table tr td{
+    outline: 1px solid rebeccapurple;
+    margin: 2px;
+    gap: 4px;
+} */

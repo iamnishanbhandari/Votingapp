@@ -1,8 +1,7 @@
 import React from "react";
 import "./Adminlogin.css";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import LockIcon from "@mui/icons-material/Lock";
+// import { LockOutlined, MailOutlined } from "@mui/icons-material";
+import Input from "../input/Input";
 const Adminlogin = () => {
   return (
     <>
@@ -12,24 +11,24 @@ const Adminlogin = () => {
         </div>
         <div className="Main-box">
           <div className="Email">
-            <i>
-              <MailIcon color="action" />
-            </i>
+            {/* <i>
+              <MailOutlined color="action" />
+            </i> */}
             <input type={"text"} placeholder={"Email"}></input>
           </div>
+          <Input type="text" placeholder="faukat" />
           <div className="Password">
-            <i>
-              <LockIcon color="action" />
-            </i>
+            {/* <i>
+              <LockOutlined color="action" /> ////here
+            </i> */}
             <input type={"text"} placeholder={"Password"}></input>
-          </div>         
-            <div className="background"></div>
-            <div className="ifSignup">
+          </div>
+          <div className="background"></div>
+          <div className="ifSignup">
             <p>Welcome Boss!!!</p>
             {/* <button>Sign-up</button> */}
           </div>
           <button className="Login-Button">Log in</button>
-
         </div>
       </div>
     </>
