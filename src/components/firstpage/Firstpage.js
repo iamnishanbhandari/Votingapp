@@ -27,7 +27,7 @@ const Firstpage = () => {
                 to="/Register"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                Sign-up{" "}
+                Sign-up
               </NavLink>{" "}
             </button>
             <button className="adminLogin">
@@ -35,8 +35,8 @@ const Firstpage = () => {
                 to="/Adminlogin"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                Adminlogin{" "}
-              </NavLink>{" "}
+                Adminlogin
+              </NavLink>
             </button>
           </div>
         </div>

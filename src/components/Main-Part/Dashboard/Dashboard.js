@@ -1,10 +1,10 @@
 import React from "react";
 import AddCandidate from "../../pages/AddCandidate/AddCandidate";
-import ChangeStatus from "../../pages/ChangeStatus";
-import Register from "../../pages/Register";
+import ChangeStatus from "../../pages/ChangeStatus/ChangeStatus";
+import Register from "../../pages/Register/Register";
 import Sidebar from "./SideBar/Sidebar";
 import { Routes, Route } from "react-router-dom";
-import Logout from "../../pages/Logout";
+import Logout from "../../pages/Logout/Logout";
 import { Button } from "@mui/joy";
 import CandidatesDetails from "../../pages/CandidateDetails/CandidatesDetails";
 const Dashboard = () => {

@@ -1,31 +1,25 @@
 import React from "react";
 import "./SideBarRow.css";
-import DetailsIcon from "@mui/icons-material/Details";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const SideBarRow = ({ selected, Icon, title, to }) => {
+const SideBarRow = ({ Icon, title, to }) => {
   return (
-    <NavLink
-      to={to}
-    >
-{ ({isActive})=>
-     ( <div className="Main-Box">
-        <div className="container">
-          <div className={`Item ${isActive && "selected"}`}>
-            <Icon className="itemIcon" />
-            <label>{title}</label>
+    <NavLink to={to}>
+      {({ isActive }) => (
+        <div className="Main-Box">
+          <div className="container">
+            <div className={`Item ${isActive && "selected"}`}>
+              <Icon className="itemIcon" />
+              <label>{title}</label>
+            </div>
           </div>
         </div>
-      </div>
-   )
-}
+      )}
     </NavLink>
   );
 };
 
 export default SideBarRow;
-
-
 
 // import React from "react";
 // import "./SideBarRow.css";
@@ -58,4 +52,3 @@ export default SideBarRow;
 // };
 
 // export default SideBarRow;
-

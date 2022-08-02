@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.Item label {
+  /* outline: 1px solid red; */
+  margin: 14px;
+  color: rgb(105, 103, 103);
+}
+
+.userItemIcon {
+  /* outline: 1px solid navy; */
+  color: rgb(105, 103, 103);
+}
+
+.Item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.Item:hover {
+  background-color: rgb(174, 167, 167);
+  color: white;
+  cursor: pointer;
+}
+
+.Item:hover > .userItemIcon {
+  color: whitesmoke;
+}
+
+.Item:hover > label {
+  color: white;
+}
+
+.Item.selected {
+  background-color: rgb(7, 166, 219);
+  color: white;
+}
+
+.Item.selected > label {
+  color: white;
+  font-weight: bold;
+}
+
+.Item.selected > .userItemIcon {
+  color: white;
+}

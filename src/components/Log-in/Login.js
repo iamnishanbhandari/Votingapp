@@ -137,11 +137,12 @@
 
 import React, { useState } from "react";
 import "./Login.css";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+// import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import LockIcon from "@mui/icons-material/Lock";
 import { NavLink, useNavigate } from "react-router-dom";
-import { color } from "@mui/system";
+// import { color } from "@mui/system";
+// import Information from "../UserPages/Information/Information";
 
 const Login = () => {
   const history = useNavigate();
@@ -187,7 +188,7 @@ const Login = () => {
           alert("invalid details");
         } else {
           console.log("user login successful");
-          history("/Dashboard/AddCandidate");
+          history("/UserDashboard/Information");
         }
       }
     }
