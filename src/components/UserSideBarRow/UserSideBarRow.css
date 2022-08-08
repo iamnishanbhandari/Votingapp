@@ -4,7 +4,7 @@
   padding: 0%;
 }
 
-.Item label {
+.userItem label {
   /* outline: 1px solid red; */
   margin: 14px;
   color: rgb(105, 103, 103);
@@ -15,36 +15,36 @@
   color: rgb(105, 103, 103);
 }
 
-.Item {
+.userItem {
   padding: 15px;
   display: flex;
   align-items: center;
 }
 
-.Item:hover {
+.userItem:hover {
   background-color: rgb(174, 167, 167);
   color: white;
   cursor: pointer;
 }
 
-.Item:hover > .userItemIcon {
+.userItem:hover > .userItemIcon {
   color: whitesmoke;
 }
 
-.Item:hover > label {
+.userItem:hover > label {
   color: white;
 }
 
-.Item.selected {
+.userItem.selected {
   background-color: rgb(7, 166, 219);
   color: white;
 }
 
-.Item.selected > label {
+.userItem.selected > label {
   color: white;
   font-weight: bold;
 }
 
-.Item.selected > .userItemIcon {
+.userItem.selected > .userItemIcon {
   color: white;
 }

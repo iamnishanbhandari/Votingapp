@@ -28,7 +28,7 @@ const Result = () => {
       </div>
       <div
         className="resultBody"
-        style={{ border: "1px solid navy", height: "360px" }}
+        style={{ border: "1px solid rgb(20, 157, 203)", height: "360px" }}
       >
         <p>Election is Not Over Yet!!! </p>
       </div>

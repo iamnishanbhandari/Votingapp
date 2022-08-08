@@ -9,7 +9,7 @@ const UserSideBarRow = ({ Icon, title, to }) => {
       {({ isActive }) => (
         <div className="UserMain-Box">
           <div className="userContainer">
-            <div className={`Item ${isActive && "selected"}`}>
+            <div className={`userItem ${isActive && "selected"}`}>
               <Icon className="userItemIcon" />
               <label>{title}</label>
             </div>
