@@ -3,7 +3,7 @@ import VotingAreaView from "./VotingAreaView";
 import useCandidatesData from "../../../hooks/useCandidatesData";
 
 const VotingArea = () => {
-  const { userCandidatesData } = userCandidatesData();
+  const { candidatesData } = useCandidatesData();
 
   return (
     <div
@@ -41,7 +41,7 @@ const VotingArea = () => {
             width: "fit-content",
           }}
         >
-          <VotingAreaView userInfo={userCandidatesData} />
+          <VotingAreaView userInfo={candidatesData} />
         </div>
       </div>
     </div>
